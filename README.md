@@ -48,4 +48,69 @@ Task AI is a modern task management app built with Flutter. It allows users to m
 ## Project Architecture
 
 This app follows a scalable and modular structure:
+```
+lib/
+├── core/
+│ └── theme_data.dart # Light/Dark theme setup
+│
+├── data/
+│ ├── models/ # Task, Project, AITaskSuggestion, etc.
+│ ├── providers/ # Provider-based state management
+│ └── services/ # AIService, API simulation, and local storage
+│
+├── presentation/
+│ ├── screens/ # Login, Dashboard, AIAssistantScreen, etc.
+│ └── ui/ # Reusable widgets like AISuggestionCard
+│
+└── main.dart # App entry with routing and theme setup
+```
+
+-- Install Dependencies
+```bash
+flutter pub get
+```
+-- Run the App
+```bash
+flutter run
+```
+
+# AI Prompt Design, Fallback Strategies & Test Coverage
+## Prompt Design
+The AIService parses keywords from user prompts to generate realistic task suggestions in the following domains:
+
+- Work/Productivity
+
+- Health & Wellness
+
+- Personal/Home Chores
+
+- Learning & Study Tasks
+
+- Prompts are validated and trimmed before dispatch. Sample prompts like:
+
+“Create 5 tasks for my blog project”
+
+“Plan a 3-day workout routine”
+are encouraged through the ExamplePrompts UI.
+
+## Fallback Strategies
+- Error States: If the mock AI fails (10% simulated chance), an error message is shown with a retry option.
+
+- Empty Results: If no suggestions match, the app gracefully informs the user.
+
+- Invalid Prompts: Prompts under 5 or over 200 characters are rejected with user feedback.
+
+- Offline Tasks: Tasks and projects remain accessible offline even if AI fails.
+
+## Tech Stack
+- Flutter
+
+- Provider (state management)
+
+- Sqflite (offline storage)
+
+- Shared Preferences (theme + session persistence)
+
+- Mock AI API (via Dart logic)
+
 
