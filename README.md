@@ -115,7 +115,29 @@ are encouraged through the ExamplePrompts UI.
 ## Screenshots
 
 ### image one
-![image one](assets/task_image_one.png)
+![simulator one](assets/simulator_one.png)
+
+### image two
+![simulator two](assets/simulator_two.png)
+
+### image three
+![simulator three](assets/simulator_three.png)
+
+### image four
+![simulator four](assets/simulator_four.png)
+
+### image five
+![simulator five](assets/simulator_five.png)
+
+### image six
+![simulator six](assets/simulator_six.png)
+
+### image seven
+![simulator seven](assets/simulator_seven.png)
+
+### image eight
+![simulator eight](assets/simulator_eight.png)
+
 
 
 
