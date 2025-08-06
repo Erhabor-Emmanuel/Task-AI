@@ -4,7 +4,6 @@ Task AI is a modern task management app built with Flutter. It allows users to m
 
 ## Features
 
-### Core Features
 
 - **Authentication**
   - Email & password login and registration
@@ -117,4 +116,6 @@ are encouraged through the ExamplePrompts UI.
 
 ### image one
 ![image one](assets/task_image_one.png)
+
+
 
